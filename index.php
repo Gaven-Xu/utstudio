@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 
-<?php include('nav.php')?>
+<?php include('parts/nav.php')?>
+
 
     <?php if(have_posts()):while(have_posts()):the_post();?>
 

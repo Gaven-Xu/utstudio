@@ -2,6 +2,8 @@
 
 <?php include('parts/nav.php')?>
 
+    this is page
+
     <?php if(have_posts()):the_post();?>
 
     <?php the_content()?>    
