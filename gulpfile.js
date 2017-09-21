@@ -17,7 +17,7 @@ gulp.task('scss', function () {
             outputStyle: 'compressed'
         }))
         .pipe(rename(function (path) {
-            path.basename += 'min'
+            path.basename += '.min'
         }))
         .pipe(sm.write('./'))
         .pipe(gulp.dest('./css'));
