@@ -2,3 +2,19 @@
 Theme Name: 优才创智
 Author: Gaven
 */
+
+@import url("./css/nav.min.css");
+
+html , body , ul , ol , li{
+	margin: 0;
+	padding: 0;
+}
+ul , ol , li{
+	list-style: none;
+}
+
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+}
