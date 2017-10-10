@@ -4,6 +4,7 @@ Author: Gaven
 */
 
 @import url("./css/nav.min.css");
+@import url("./css/banner.min.css");
 
 html , body , ul , ol , li{
 	margin: 0;
