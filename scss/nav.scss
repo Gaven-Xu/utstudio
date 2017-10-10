@@ -31,19 +31,28 @@
 		}
 	}
 	.menu{
-		height: 60px;
-		padding: 20px 0;
+		height: 40px;
+		padding: 30px 0;
 		& *{
-			line-height: 60px;
 			text-decoration: none;
+		}
+		li{
+			line-height: 40px;
 		}
 		a{
 			color: #878f93;
-			line-height: 40px;
+			line-height: 20px;
 			padding: 10px;
 		}
 		a:hover{
 			color: #ff6556;
+		}
+		.nav_enlist > a{
+			background: #ff6556;
+			color: #ffffff;
+			border-radius: 5px;
+		}
+		.nav_enlist > a:hover{
 		}
 	}
 }
