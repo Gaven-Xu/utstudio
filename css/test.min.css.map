@@ -1,1 +1,0 @@
-{"version":3,"file":"test.min.css","sources":["test.scss"],"sourcesContent":["html , body{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n"],"names":[],"mappings":"AAAA,AAAA,IAAI,CAAG,AAAA,IAAI,AAAA,CACV,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV"}

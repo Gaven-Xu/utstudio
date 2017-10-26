@@ -2,11 +2,6 @@
 
 <?php include('parts/nav.php')?>
 <?php include('parts/banner.php')?>
-<?php include('parts/index/index_countdown.php')?>
-<?php include('parts/index/index_story.php') ?>
-
-
-
 
     <?php query_posts(array('category_name'=>'pic','posts_per_page'=>5));if(have_posts()):while(have_posts()):the_post();?>
         <?php if(get_content_first_image(get_the_content())):?>
