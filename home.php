@@ -2,6 +2,7 @@
 
 <?php include('parts/nav.php')?>
 <?php include('parts/banner.php')?>
+<?php include('parts/index/index_countdown.php')?>
 <?php include('parts/index/index_story.php') ?>
 
 
