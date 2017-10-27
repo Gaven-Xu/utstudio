@@ -1,14 +1,14 @@
 <?php get_header(); ?>
-<?php include('parts/nav.php')?>
+    <link rel="stylesheet" href="<?php bloginfo(template_url)?>/css/page/page-chat.min.css">
+<?php include('parts/nav.php');wp_reset_query()?>
 
 <!--Chat-->
-
-<div id="comnBox" class="temp_chat">
-
-      <div id="Chat">
-        <?php comments_template();?>
-      </div>
-
+<div id="ChatList">
+    <?php wp_list_comments();?>
+</div>
+<div id="ChatBox">
+    
+    <?php if(comments_open()) comments_template();?>
 </div>
 <!--Chat end-->
 <?php get_footer(); ?>
