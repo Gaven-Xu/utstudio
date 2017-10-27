@@ -1,0 +1,19 @@
+#HomePosts{
+	width: 100%;
+	float: left;
+	& > *{
+		float: left;
+		width: (100%/3);
+		display: block;
+		height: 260px;
+	}
+	.ui{
+		background-color: #ff0000;
+	}
+	.front_end{
+		background-color: #00ff00;
+	}
+	.notice{
+		background-color: #0000ff;
+	}
+}

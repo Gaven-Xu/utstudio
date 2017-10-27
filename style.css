@@ -3,7 +3,9 @@ Theme Name: UTStudio
 Author: Gaven
 */
 
-@import url("./css/index/foot.min.css");
+@import url("./css/nav.min.css");
+@import url("./css/banner.min.css");
+@import url("./css/foot.min.css");
 
 html , body , ul , ol , li{
 	margin: 0;
@@ -12,7 +14,13 @@ html , body , ul , ol , li{
 ul , ol , li{
 	list-style: none;
 }
-
+a{
+	text-decoration: none;
+	color: #39ccd6;
+}
+a:hover{
+	color: #d0ff00;
+}
 .clear::after{
 	content: "";
 	display: block;

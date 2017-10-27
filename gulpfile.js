@@ -8,6 +8,13 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     notify = require('gulp-notify');
 
+var guli = [
+    '骚年你很棒',
+    '加油，你可以',
+    '要不要喝点水',
+    '药，药，切克闹，煎饼果子来一套'
+]
+
 gulp.task('scss', function () {
     gulp.src('./scss/**/*.scss')
         .pipe(cached('scssCachedFile'))
@@ -23,7 +30,7 @@ gulp.task('scss', function () {
         }))
         .pipe(sm.write('./'))
         .pipe(gulp.dest('./css'))
-        .pipe(notify({ message: 'SCSS IS OK' }))
+        .pipe(notify({ message: guli[parseInt(guli.length*Math.random())]}))
 		// .pipe(connect.reload())
 })
 

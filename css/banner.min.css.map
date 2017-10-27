@@ -1,0 +1,1 @@
+{"version":3,"file":"banner.min.css","sources":["banner.scss"],"sourcesContent":["#Banner{\n\theight: 320px;\n\tbackground-color: #ffff88;\n}\n"],"names":[],"mappings":"AAAA,AAAA,OAAO,AAAA,CACN,MAAM,CAAE,KAAK,CACb,gBAAgB,CAAE,OAAO,CACzB"}

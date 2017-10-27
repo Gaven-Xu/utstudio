@@ -1,0 +1,23 @@
+html{
+	background-color: rgb(255, 255, 255);
+}
+#Nav{
+	height: 60px;
+	background-color: rgb(228, 254, 255);
+	a{
+		color: #666666;
+		min-width: 88px;
+		display: block;
+		line-height: 60px;
+		text-align: center;
+	}
+	a:hover , .current-menu-item > a{
+		color: #ffffff;
+		background-color: linear-gradient(to right,#558cf1,#66aff1);
+	}
+	.menu{
+		.menu-item{
+			float: left;
+		}
+	}
+}
