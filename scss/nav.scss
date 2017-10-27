@@ -1,5 +1,7 @@
-html{
-	background-color: rgb(255, 255, 255);
+%clrf:after{
+	display: block;
+	content: "";
+	clear: both;
 }
 #Nav{
 	height: 60px;
@@ -7,17 +9,23 @@ html{
 	a{
 		color: #666666;
 		min-width: 88px;
-		display: block;
 		line-height: 60px;
 		text-align: center;
+		float: left;
 	}
-	a:hover , .current-menu-item > a{
+	a:hover{
 		color: #ffffff;
-		background-color: linear-gradient(to right,#558cf1,#66aff1);
+		background-color: #a8bde0;
 	}
-	.menu{
-		.menu-item{
-			float: left;
-		}
+	.menu , .menu-item{
+		@extend %clrf;
+		float: left;
+	}
+	.menu-item-home > a{
+		color: #ffffff;
+		background-color: #f15555 !important;
+	}
+	.current-menu-item > a{
+		border-bottom: 2px solid #a8bde0;
 	}
 }

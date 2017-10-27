@@ -30,7 +30,7 @@ gulp.task('scss', function () {
         }))
         .pipe(sm.write('./'))
         .pipe(gulp.dest('./css'))
-        .pipe(notify({ message: guli[parseInt(guli.length*Math.random())]}))
+        .pipe(notify({ message: "(･ェ･。) "+guli[parseInt(guli.length*Math.random())]}))
 		// .pipe(connect.reload())
 })
 
