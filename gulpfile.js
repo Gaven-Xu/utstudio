@@ -23,7 +23,7 @@ gulp.task('scss', function () {
         }))
         .pipe(sm.write('./'))
         .pipe(gulp.dest('./css'))
-        .pipe(notify({ message: 'SCSS IS OK' }))
+        // .pipe(notify({ message: 'SCSS IS OK' }))
 		// .pipe(connect.reload())
 })
 
