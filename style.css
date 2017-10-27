@@ -1,11 +1,9 @@
 /**
-Theme Name: 优才创智
+Theme Name: UTStudio
 Author: Gaven
 */
 
-@import url("./css/nav.min.css");
-@import url("./css/banner.min.css");
-@import url("./css/banner.min.css");
+@import url("./css/index/foot.min.css");
 
 html , body , ul , ol , li{
 	margin: 0;

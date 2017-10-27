@@ -71,3 +71,7 @@ stable 稳定上线版本，由项目负责人确认测试没有问题之后，�
 > gulp scss:watch 任务。开启scss文件监听
 
 > gulp 任务。先执行scss，然后开启scss:watch，然后输出提示信息
+
+**2017-10-27 10:55:14**
+
+    徐佳程: 修改了gulp，增加了gulp-notify，弹窗提示css错误
