@@ -1,0 +1,23 @@
+#catgory_life{
+  width: 100%;
+  overflow: hidden;
+  .cat_box{
+    width: 90%;
+    height: 3000px;
+    margin: auto;
+    border: 1px solid black;
+    .cat_main{
+      width: 70%;
+      float: left;
+    }
+    .cat_other{
+      width: 30%;
+      height: 2000px;
+      background-color: yellow;
+      float: left;
+    }
+  }
+}
+#catgory_post{
+
+}

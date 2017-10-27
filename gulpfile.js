@@ -13,7 +13,7 @@ var guli = [
     '加油，你可以',
     '要不要喝点水',
     '药，药，切克闹，煎饼果子来一套'
-]
+];
 
 gulp.task('scss', function () {
     gulp.src('./scss/**/*.scss')
