@@ -18,7 +18,14 @@
 		color: #ffffff;
 		background-color: #f15555;
 	}
-	.menu , .menu-item{
+	.logo{
+		width: 60px;
+		height: 60px;
+		background: url("../imgs/logo_ut.png") no-repeat 12px;
+		margin-left: -20px;
+		float: left;
+	}
+	.menu-main-container , .menu , .menu-item{
 		@extend %clrf;
 		float: left;
 	}

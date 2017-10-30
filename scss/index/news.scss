@@ -1,5 +1,8 @@
 #HomePosts{
 	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 60px;
 	&:after{
 		content: "";
 		display: block;
@@ -12,12 +15,12 @@
 		height: 260px;
 	}
 	.ui{
-		background-color: #ff0000;
+		background-color: #eeeeee;
 	}
 	.front_end{
-		background-color: #00ff00;
+		background-color: #dddddd;
 	}
 	.notice{
-		background-color: #0000ff;
+		background-color: #eeeeee;
 	}
 }
