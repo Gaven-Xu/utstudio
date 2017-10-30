@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <link rel="stylesheet" href="<?php bloginfo(template_url)?>/css/page/page-chat.min.css">
+    <link rel="stylesheet" href="<?php bloginfo(template_url)?>/css/chat.min.css">
 <?php include('parts/nav.php');?>
 
 <!--Chat-->
