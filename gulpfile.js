@@ -17,21 +17,18 @@ var guli = [
     '老铁，没毛病'
 ]
 
-
 gulp.task('scss', function () {
     gulp.src('./scss/**/*.scss')
         .pipe(cached('scssCachedFile'))
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-        .pipe(sm.init({
-            loadMaps: true
-        }))
+        .pipe(sm.init())
         .pipe(sass({
             outputStyle: 'compressed'
         }))
         .pipe(rename(function (path) {
             path.basename += '.min'
         }))
-        .pipe(sm.write('./'))
+        .pipe(sm.write())
         .pipe(gulp.dest('./css'))
         .pipe(notify({ message: "(･ェ･。) "+guli[parseInt(guli.length*Math.random())]}))
 		// .pipe(connect.reload())

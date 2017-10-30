@@ -5,7 +5,8 @@
 }
 #Nav{
 	height: 60px;
-	background-color: rgb(228, 254, 255);
+	width: 90%;
+	margin: 0 auto;
 	a{
 		color: #666666;
 		min-width: 88px;
@@ -15,16 +16,16 @@
 	}
 	a:hover{
 		color: #ffffff;
-		background-color: #a8bde0;
+		background-color: #f15555;
 	}
 	.menu , .menu-item{
 		@extend %clrf;
 		float: left;
 	}
-	.menu-item-home > a{
-		color: #ffffff;
-		background-color: #f15555 !important;
-	}
+	// .menu-item-home > a{
+	// 	color: #ffffff;
+	// 	background-color: #f15555 !important;
+	// }
 	.current-menu-item > a{
 		border-bottom: 2px solid #f15555;
 		height: 58px;

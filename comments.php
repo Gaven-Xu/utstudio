@@ -67,7 +67,7 @@ if ( post_password_required() ) {
 				<p class="user_info">
 					<input type="text" name="author" id="author_input" value="<?php echo $comment_author; ?>" size="22" tabindex="1" placeholder="昵称（必填）"/>
 					<input type="email" name="email" id="email_input" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" placeholder="邮箱（必填）"/>
-					<input type="url" name="url" id="url_input" value="<?php echo $comment_author_link; ?>" size="22" tabindex="2" placeholder="网址（选填）"/>
+					<!-- <input type="url" name="url" id="url_input" value="<?php echo $comment_author_link; ?>" size="22" tabindex="2" placeholder="网址（选填）"/> -->
 				</p>
 			<?php endif; ?>
 			<p class="user_text">
