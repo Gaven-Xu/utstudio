@@ -23,11 +23,11 @@ function mytheme_comment($comment,$args,$depth){
             <div class="content-inner">
                 <div class="text">
                     <?php if( $comment_parent > 0):?>
-                        <a href="<?php comment_author_url(); ?>" rel="nofollow"><?php echo $comment_author;?></a> 
+                        <a href="<?php comment_author_url($comment_author); ?>" rel="nofollow"><?php echo $comment_author;?></a> 
                         @ <a href="<?php comment_author_url($comment_parent); ?>" rel="nofollow"><?php echo get_comment_author($comment_parent);?></a>
                         : <pre><?php echo get_comment_text();?></pre>
                     <?php else :?>
-                        <a href="<?php comment_author_url(); ?>" rel="nofollow"><?php echo $comment_author;?></a> 
+                        <a href="<?php comment_author_url($comment_author); ?>" rel="nofollow"><?php echo $comment_author;?></a> 
                         : <pre><?php echo get_comment_text();?></pre>
                     <?php endif; ?>
                 </div>

@@ -18,13 +18,13 @@
 		color: #ffffff;
 		background-color: #f15555;
 	}
-	.logo{
-		width: 60px;
-		height: 60px;
-		background: url("../imgs/logo_ut.png") no-repeat 12px;
-		margin-left: -20px;
-		float: left;
-	}
+	// .logo{
+	// 	width: 60px;
+	// 	height: 60px;
+	// 	background: url("../imgs/logo_ut.png") no-repeat 12px;
+	// 	margin-left: -20px;
+	// 	float: left;
+	// }
 	.menu-main-container , .menu , .menu-item{
 		@extend %clrf;
 		float: left;
@@ -37,5 +37,88 @@
 		border-bottom: 2px solid #f15555;
 		height: 58px;
 		line-height: 60px;
+	}
+	.line{
+		position: absolute;
+		opacity: 0;
+		background: #f15555;
+		transition: all 0.2s;
+	}
+	&:hover .line{
+		opacity: 0.75;
+	}
+	.line_u{
+		/*background: #7aa6af;*/
+	}
+
+	.line_t{
+		/*background: #43676f;*/
+	}
+
+	.line_u1{
+		width: 9px;
+		height: 0;
+		left: 15px;
+		top: 15px;
+	}
+
+	&:hover .line_u1{
+		height: 30px;
+	}
+
+	.line_u2{
+		width: 0;
+		height: 9px;
+		left: 15px;
+		bottom: 15px;
+	}
+
+	&:hover .line_u2{
+		width: 27px;
+		transition-delay: 0.2s;
+	}
+
+	.line_u3{
+		width: 9px;
+		height: 0;
+		left: 33px;
+		bottom: 15px;
+	}
+
+	&:hover .line_u3{
+		height: 30px;
+		transition-delay: 0.4s;
+	}
+
+	.line_t1{
+		width: 0;
+		height: 9px;
+		top: 21px;
+		left: 24px;
+	}
+
+	&:hover .line_t1{
+		width: 27px;
+		transition-delay: 0.6s;
+	}
+
+	.line_t2{
+		width: 9px;
+		height: 0;
+		left: 33px;
+		top: 21px;
+	}
+
+	&:hover .line_t2{
+		height: 30px;
+		transition-delay: 0.8s;
+	}
+	.logo{
+		position: relative;
+		width: 64px;
+		height: 60px;
+		cursor: pointer;
+		float: left;
+		margin-left: -20px;
 	}
 }
