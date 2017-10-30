@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 function get_content_first_image($content){
     if ( $content === false ) $content = get_the_content();

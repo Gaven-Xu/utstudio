@@ -17,9 +17,9 @@ if (have_posts()):while (have_posts()):the_post(); ?>
             作者：<?php the_author() ?>
         </small>
         <br>
-        <?php if(get_content_first_image(get_the_content())):?>
-            <img src="<?php echo get_content_first_image(get_the_content());?>" alt="">
-        <?php endif;?>
+        <?php if (get_content_first_image(get_the_content())): ?>
+            <img src="<?php echo get_content_first_image(get_the_content()); ?>" alt="">
+        <?php endif; ?>
         <div class="cat_content">
             <?php the_content(); ?>
         </div>
@@ -29,13 +29,13 @@ if (have_posts()):while (have_posts()):the_post(); ?>
 
     <h5>No Posts</h5>
 
-<?php endif;?>
+<?php endif; ?>
 
 <script>
     var oP = document.querySelectorAll(".cat_content");
-    for(var i=0;i<oP.length;i++){
-        oP[i].innerText = oP[i].innerText.substr(0,100);
-        oP[i].innerText+="...";
+    for (var i = 0; i < oP.length; i++) {
+        oP[i].innerText = oP[i].innerText.substr(0, 100);
+        oP[i].innerText += "...";
     }
 </script>
 

@@ -31,7 +31,7 @@
 
     <?php else:?>
 
-        <h5>No Posts</h5>   
+        <h5>No Posts</h5>
 
     <?php endif;?>
 
