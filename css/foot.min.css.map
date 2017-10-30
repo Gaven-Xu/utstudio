@@ -1,1 +1,1 @@
-{"version":3,"file":"foot.min.css","sources":["foot.scss"],"sourcesContent":["#Foot{\r\n\tcolor: #999999;\r\n\tfont-size: 12px;\r\n\ttext-align: center;\r\n}\r\n"],"names":[],"mappings":"AAAA,AAAA,KAAK,AAAA,CACJ,KAAK,CAAE,OAAO,CACd,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CAClB"}
+{"version":3,"file":"foot.min.css","sources":["foot.scss"],"sourcesContent":["#Foot{\n\tcolor: #999999;\n\tfont-size: 12px;\n\ttext-align: center;\n}\n"],"names":[],"mappings":"AAAA,AAAA,KAAK,AAAA,CACJ,KAAK,CAAE,OAAO,CACd,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CAClB"}
