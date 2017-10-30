@@ -1,14 +1,17 @@
 <?php get_header(); ?>
-<?php include('parts/nav.php')?>
+    <link rel="stylesheet" href="<?php bloginfo(template_url)?>/css/page/page-chat.min.css">
+<?php include('parts/nav.php');?>
 
 <!--Chat-->
 
-<div id="comnBox" class="temp_chat">
+<?php if(have_posts()):the_post();?>
 
-      <div id="Chat">
-        <?php comments_template();?>
-      </div>
+    <?php the_content();//content获取全文 ?>
 
+<?php endif;?>
+
+<div id="ChatBox">
+    <?php comments_template();?>
 </div>
 <!--Chat end-->
 <?php get_footer(); ?>
