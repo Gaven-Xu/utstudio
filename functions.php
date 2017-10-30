@@ -1,34 +1,49 @@
 <?php 
 function mytheme_comment($comment,$args,$depth){
-  $comment_id = $comment->comment_ID;
-  $comment_author = $comment->comment_author;
-  $comment_parent = $comment->comment_parent;
-  $comment_post = $comment->comment_post_ID;
+    $comment_id = $comment->comment_ID;
+    $comment_author = $comment->comment_author;
+    $comment_parent = $comment->comment_parent;
+    $comment_post = $comment->comment_post_ID;
 ?>
 
-<div <?php comment_class($replytocom.$current); ?>>
-<div class="comment_author">
-  <?php  if (function_exists('get_avatar') && get_option('show_avatars')) echo get_avatar($comment, 48) ?>
-</div>
-<div class="comment-body">
-  <?php if( $comment->comment_parent > 0):?>
-    <em><a href="<?php comment_author_url(); ?>" rel="nofollow"><?php echo $comment_author;?></a> : @<?php echo get_comment_author( $comment->comment_parent );?><small> <?php comment_date('y-m-d'); ?></small></em>
-  <?php else :?>
-    <em><a href="<?php comment_author_url(); ?>" rel="nofollow"><?php echo $comment_author; ?></a> : </em>
-  <?php endif; ?>
-  <?php comment_reply_link(array_merge( $args, array('reply_text' => '回复','depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
-  <?php if ($comment->comment_approved == '0') : ?>
-    <p class="comment-awaiting-moderation"><?php _e('评论正在审核中.') ?></p>
-    <br />
-  <?php else: ?>
-    <?php
-      comment_text();
-    ?>
-  <?php endif ?>
-</div>
+<div id="Comment-<?php echo $comment_id;?>" <?php comment_class($replytocom.$current); ?>>
+
+    <div class="avatar">
+        <?php  if (function_exists('get_avatar') && get_option('show_avatars')) echo get_avatar($comment, 60) ?>
+    </div>
+
+    <?php if ($comment->comment_approved == '0') : ?>
+        <div class="content">
+            <div class="text">
+                <span class="alert"><?php _e('评论正在审核中.') ?></span>
+            </div>
+        </div>
+    <?php else:?>
+        <div class="content">
+            <div class="content-inner">
+                <div class="text">
+                    <?php if( $comment_parent > 0):?>
+                        <a href="<?php comment_author_url(); ?>" rel="nofollow"><?php echo $comment_author;?></a> 
+                        @ <a href="<?php comment_author_url($comment_parent); ?>" rel="nofollow"><?php echo get_comment_author($comment_parent);?></a>
+                        : <pre><?php echo get_comment_text();?></pre>
+                    <?php else :?>
+                        <a href="<?php comment_author_url(); ?>" rel="nofollow"><?php echo $comment_author;?></a> 
+                        : <pre><?php echo get_comment_text();?></pre>
+                    <?php endif; ?>
+                </div>
+                <div class="time">#<?php echo $comment_id;?> / <?php comment_date('m月d日 h:m'); ?></div>
+            </div>
+        </div>
+        
+    <?php endif;?>
+
+    <div class="reply">
+        <?php comment_reply_link(array_merge( $args, array('reply_text' => '回复','depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+    </div>
+
 </div>
 
-  <?php
+<?php
 }//自定义评论样式
 
 function get_content_first_image($content){

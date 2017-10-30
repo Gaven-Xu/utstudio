@@ -1,0 +1,92 @@
+%baseSize{
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px;
+}
+%clrf:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+#ChatList{
+	@extend %baseSize;
+	background-color: #efefef;
+}
+#ChatBox{
+	@extend %baseSize;
+	background-color: #efefef;
+	textarea{
+		padding: 16px;
+		width: 100%;
+		height: 100px;
+		outline: none;
+		box-sizing: border-box;
+		resize: vertical;
+	}
+	.comment{
+		@extend %clrf;
+		position: relative;
+		min-height: 40px;
+		padding: 0 0 20px;
+		width: 100%;
+		background-color: #e0e0e0;
+		margin-bottom: 10px;
+		pre{
+			white-space: pre-wrap;
+			margin: 0;
+			font-family: "宋体";
+			font-size: 13px;
+		}
+		.avatar , .content , .reply{
+			float: left;
+		}
+		.avatar{
+			height: 60px;
+			width: 60px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.content{
+			width: 100%;
+			a{
+				color: #f15555;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			.content-inner{
+				margin: 2px 65px;
+			}
+			.text{
+				font-size: 14px;
+				color: #666666;
+			}
+			.time{
+				font-size: 12px;
+				line-height: 20px;
+				color: #999999;
+				position: absolute;
+				bottom: 0;
+			}
+		}
+		.reply{
+			width: 60px;
+			background-color: #bfbfbf;
+			position: absolute;
+			top: 0;
+			right: 0;
+			a{
+				display: block;
+				width: 60px;
+				height: 60px;
+				color: #ffffff;
+				line-height: 60px;
+				text-align: center;
+			}
+			&:hover{
+				background-color: #f15555;
+			}
+		}
+	}
+}
