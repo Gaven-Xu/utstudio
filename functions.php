@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php 
+=======
+<?php
+>>>>>>> 0e3c9dd5d7172550f9c74a4bec8095f9cbef0358
 function mytheme_comment($comment,$args,$depth){
     $comment_id = $comment->comment_ID;
     $comment_author = $comment->comment_author;
