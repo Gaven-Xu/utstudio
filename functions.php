@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<?php
-=======
+
 <?php 
 function mytheme_comment($comment,$args,$depth){
   $comment_id = $comment->comment_ID;
@@ -33,7 +31,6 @@ function mytheme_comment($comment,$args,$depth){
 
   <?php
 }//自定义评论样式
->>>>>>> master
 
 function get_content_first_image($content){
     if ( $content === false ) $content = get_the_content();
