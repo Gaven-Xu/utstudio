@@ -8,7 +8,6 @@
             <?php
 
             if (have_posts()):while (have_posts()):the_post(); ?>
-
                 <div class="article">
                     <h2 class="post-<?php the_ID(); ?>">
                         标题：<a href="<?php the_permalink() ?>" rel="bookmark"
@@ -30,9 +29,7 @@
                     </div>
                 </div>
             <?php endwhile; else: ?>
-
                 <h5>No Posts</h5>
-
             <?php endif; ?>
         </div>
         <div class="cat_other">

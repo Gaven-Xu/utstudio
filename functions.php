@@ -1,5 +1,4 @@
-
-<?php 
+<?php
 function mytheme_comment($comment,$args,$depth){
     $comment_id = $comment->comment_ID;
     $comment_author = $comment->comment_author;
