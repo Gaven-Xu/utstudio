@@ -15,7 +15,11 @@ var guli = [
     '药，药，切克闹，煎饼果子来一套',
     '6得飞起',
     '老铁，没毛病'
+<<<<<<< HEAD
 ]
+=======
+];
+>>>>>>> dev
 
 gulp.task('scss', function () {
     gulp.src('./scss/**/*.scss')

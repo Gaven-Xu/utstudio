@@ -1,3 +1,4 @@
+
 <?php 
 function mytheme_comment($comment,$args,$depth){
     $comment_id = $comment->comment_ID;
