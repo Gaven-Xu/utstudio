@@ -1,4 +1,3 @@
-
 <?php 
 function mytheme_comment($comment,$args,$depth){
     $comment_id = $comment->comment_ID;
@@ -8,6 +7,8 @@ function mytheme_comment($comment,$args,$depth){
 ?>
 
 <div id="Comment-<?php echo $comment_id;?>" <?php comment_class($replytocom.$current); ?>>
+
+    
 
     <div class="avatar">
         <?php  if (function_exists('get_avatar') && get_option('show_avatars')) echo get_avatar($comment, 60) ?>
