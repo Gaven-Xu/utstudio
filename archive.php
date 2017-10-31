@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/archive/archive.min.css">
 <?php include('parts/nav.php') ?>
 
-<div id="catgory">
+<div id="archive">
     <div class="cat_box">
         <div class="cat_main">
             <?php
